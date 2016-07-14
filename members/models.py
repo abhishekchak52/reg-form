@@ -1,7 +1,6 @@
 from __future__ import unicode_literals
 from django.db import models
-from phonenumber_field.modelfields import PhoneNumberField
-
+from django.core.validators import RegexValidator
 # Create your models here.
 
 class member(models.Model):
@@ -26,13 +25,16 @@ class member(models.Model):
     name = models.CharField(max_length=50)
     course = models.CharField(max_length=50,choices=courses)
     year = models.PositiveSmallIntegerField(choices=years)
-    phone_number = PhoneNumberField()
+    phone_regex = RegexValidator(regex=r'^\d{10}$',
+                                 message="Phone number must be 10 digits.")
+    phone_number = models.CharField(validators=[phone_regex], blank=True,max_length=10)  # validators should be a list
+    # phone_number = models.CharField(max_length=10,)
     email = models.EmailField()
     message = models.TextField()
     timestamp = models.DateTimeField(auto_now=False,auto_now_add=True)
 
     def __unicode__(self):
-        return self.title
+        return self.name
 
     def __str__(self):
-        return self.title
+        return self.name
