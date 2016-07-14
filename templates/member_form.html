@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+
+{% block style %}
+    {{ block.super }}
+<link rel="stylesheet" href='{% static 'css/form.css' %}'/>
+{% endblock style %}
+
+
+
+{% block content %}
+
+    <p id="fillup">Hey! Fill up the following form to join the Computer Science Society</p>
+    <form method="POST" action="" enctype="multipart/form-data">{% csrf_token %}
+        {% for field in form.visible_fields %}
+            <div class="fieldwrapper">
+                {{ field.errors }}<br/>
+                {{ field.label_tag }}<br/>
+                {{ field }}
+            </div>
+        {% endfor %}
+{#    {{ form.as_p }}#}
+    <button type="submit" class="submit">Submit</button>
+    </form>
+
+
+{% endblock content %}
