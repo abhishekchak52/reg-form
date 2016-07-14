@@ -9,7 +9,7 @@ class MemberForm(forms.ModelForm):
             'name':"FULL NAME",
             'course':"COURSE",
             'year':"YEAR",
-            'phone_number':"PHONE NUMBER",
+            'phone_number':"10-DIGIT PHONE NUMBER",
             'email':"EMAIL",
             'message':"MESSAGE",
         }

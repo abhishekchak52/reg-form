@@ -9,8 +9,8 @@ ul {
 }
 
 .content {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 body {
@@ -29,6 +29,8 @@ li {
 .footer {
     display: block;
     margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
     clear: both;
     font-size: 15px;
     color: black;
