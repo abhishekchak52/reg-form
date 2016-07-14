@@ -9,8 +9,9 @@ ul {
 }
 
 .content {
-    padding-left: 30px;
-    padding-right: 30px;
+    width: 80%;
+    display: block;
+    margin: auto;
 }
 
 body {
@@ -79,11 +80,5 @@ li {
 
     .footer {
         display: none;
-    }
-
-    div.content {
-        width: 70%;
-        display: block;
-        margin: auto;
     }
 }

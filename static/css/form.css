@@ -75,7 +75,50 @@ textarea {
     .submit {
         width: 100px;
         margin-left: auto;
-        margin-right: 5px;
+        margin-right: 0px;
     }
 
+    input {
+        width: 100%;
+        display: inherit;
+    }
+
+    select {
+        width: 100%;
+        display: inherit;
+    }
+
+    div.fieldwrapper {
+        display: inline-block;
+        width: 45%;
+    }
+
+    div#EMAIL.fieldwrapper {
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+
+    div#EMAIL.fieldwrapper input {
+        width: 100%;
+    }
+
+    div#MESSAGE {
+        display: block;
+        width: 100%;
+    }
+    div#COURSE {
+        float: right;
+    }
+    div[id="10-DIGIT PHONE NUMBER"]{
+        float: right;
+    }
+    #id_course {
+        display: block;
+        margin-right: 0;
+        margin-left: auto;
+    }
+    /*div#COURSE{*/
+    /*margin-left: auto;*/
+    /*}*/
 }
