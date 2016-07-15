@@ -1,6 +1,7 @@
 
 #fillup {
     font-weight: 700;
+    font-size: 20px;
     display: block;
     margin: auto;
     text-align: center;
@@ -27,7 +28,6 @@ select {
 }
 
 label {
-    font-family: "DejaVu Sans";
     font-size: 17px;
     color: dimgrey;
     margin: 0
@@ -139,8 +139,4 @@ textarea {
         margin-right: 0;
         margin-left: auto;
     }
-
-    /*div#COURSE{*/
-    /*margin-left: auto;*/
-    /*}*/
 }

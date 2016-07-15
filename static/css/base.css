@@ -1,15 +1,19 @@
 /* For mobiles */
+*{
+    font-family: "Roboto", sans-serif;
+}
 ul {
     padding: 0;
     display: flex;
     list-style-type: none;
-    font-family: Arial, sans-serif;
     font-size: 20px;
     color: #ffffff;
 }
 
 .content {
-    width: 80%;
+    padding-right: 30px;
+    padding-left: 30px;
+    max-width:786px;
     display: block;
     margin: auto;
 }
@@ -30,15 +34,15 @@ li {
 .footer {
     display: block;
     margin: auto;
-    margin-bottom: 20px;
+    position: static;
+    bottom: 0;
+    right: 0;
+    left:0;
+    margin-bottom: 40px;
     margin-top: 20px;
     clear: both;
     font-size: 15px;
     color: black;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
     text-align: center;
 }
 
@@ -93,8 +97,6 @@ li {
     }
 
     #top-links {
-        /*position: relative;*/
-        /*top: -0.05rem;*/
         font-size: 15px;
         float: right;
         padding-right: 12rem;

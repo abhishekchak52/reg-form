@@ -1,4 +1,5 @@
 from django.contrib import admin
+from django.contrib.auth.models import Group
 from .models import member
 # Register your models here.
 
@@ -10,3 +11,4 @@ class MemberModelAdmin(admin.ModelAdmin):
         model = member
 
 admin.site.register(member,MemberModelAdmin)
+admin.site.unregister(Group)
