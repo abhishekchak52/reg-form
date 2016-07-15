@@ -26,7 +26,6 @@ li {
     display: none;
 
 }
-
 .footer {
     display: block;
     margin: auto;
@@ -35,6 +34,11 @@ li {
     clear: both;
     font-size: 15px;
     color: black;
+    position: absolute;
+    bottom: 0;
+    right:0;
+    left:0;
+    text-align: center;
 }
 
 .logo-img {

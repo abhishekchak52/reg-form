@@ -1,0 +1,15 @@
+#success {
+    display: block;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 300px;
+    max-height: 50px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    color: #48b5ee;
+}

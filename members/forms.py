@@ -13,3 +13,4 @@ class MemberForm(forms.ModelForm):
             'email':"EMAIL",
             'message':"MESSAGE",
         }
+

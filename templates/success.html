@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block style %}
+{{ block.super }}
+    <link rel="stylesheet" href='{%  static 'css/success.css' %}'/>
+{% endblock style %}
+
+
+{% block content %}
+
+<div id="success">
+Thanks!<br/> We'll be in touch!
+</div>
+
+{% endblock content %}
