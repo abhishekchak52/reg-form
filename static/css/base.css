@@ -26,6 +26,7 @@ li {
     display: none;
 
 }
+
 .footer {
     display: block;
     margin: auto;
@@ -36,9 +37,19 @@ li {
     color: black;
     position: absolute;
     bottom: 0;
-    right:0;
-    left:0;
+    right: 0;
+    left: 0;
     text-align: center;
+}
+
+.footer a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer a {
+    color: #000000;
+
 }
 
 .logo-img {
@@ -70,6 +81,15 @@ li {
     #top-links * {
         padding: 0.2rem;
         display: inline-block;
+    }
+
+    #top-links a {
+        color: #ffffff;
+    }
+
+    #top-links a:hover {
+        text-decoration: none;
+        color: #ffffff;
     }
 
     #top-links {
